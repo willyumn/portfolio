@@ -2,10 +2,6 @@
 <html>
 
 <head>
-    <body style="background-color: rgb(0, 0, 0);">
-        <!-- Your page content here -->
-    </body>
-    
     <title>Will Kha | 3D Design</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,95 +9,120 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2fa03971cf.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
-</head>
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "play", sans-serif;
-        background-color: black;
-    }
-
-    .nav-wrap {
-        background-color: #ffffff00;
-        padding: 0px;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        z-index: 2;
-    }
-
-    header {
-        margin: 0;
-    }
-
-    #gallery-container {
-        padding: 20px;
-        margin-top: 70px; /* Create space below the fixed header */
-    }
-
-    #gallery {
-    column-count: 3;
-    column-gap: 20px;
-    text-align: center;
-    position: relative;
-    width: 100%; /* Set the width to 100% */
-}
-    .image-container, .video-container {
-        position: relative;
-    }
-
-    img, video {
-        width: 100%;
-        height: auto;
-        display: block;
-        margin-bottom: 20px;
-        transition: transform 0.25s ease;
-    }
-
-    .image-container:hover img, .video-container:hover video {
-        transform: scale(1.02); /* Adjust the scale factor as needed */
-        filter: brightness(0.1); /* Darken the image or video */
-        transition: ease .1s;
-    }
-
-    .caption {
-        position: absolute;
-        background: rgba(0, 0, 0, 0);
-        color: white;
-        padding: 24px;
-        text-align: left;
-        top: 0;
-        left: 0;
-        right: 0;
-        opacity: 0;
-        transition: opacity 0.3s;
-        font-size: 31px;
-        border-radius: 24px;
-        
-    }
-
-    .image-container:hover .caption, .video-container:hover .caption {
-        opacity: 1;
-    }
-
-    .b2t-image img {
-  filter: invert(100%);
-}
-
-    @media (max-width: 800px) {
-        #gallery {
-            column-count: 1;
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "play", sans-serif;
+            background-color: black;
         }
-    }
-</style>
+
+        .nav-wrap {
+            background-color: rgb(0, 0, 0);
+            padding: 0px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .nav-wrap a {
+    color: var(--color3); /* Set the default text color */
+        }
+        header {
+            margin: 0;
+        }
+
+        #gallery-container {
+            padding: 20px;
+            margin-top: 70px; /* Create space below the fixed header */
+        }
+
+        #gallery {
+            column-count: 3;
+            column-gap: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%; /* Set the width to 100% */
+        }
+
+        .image-container, .video-container {
+            position: relative;
+        }
+
+        img, video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            transition: transform 0.25s ease;
+        }
+
+        .image-container:hover img, .video-container:hover video {
+            transform: scale(1.02); /* Adjust the scale factor as needed */
+            filter: brightness(0.1); /* Darken the image or video */
+            transition: ease .1s;
+        }
+
+        .caption {
+            position: absolute;
+            background: rgba(0, 0, 0, 0);
+            color: white;
+            padding: 24px;
+            text-align: left;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 31px;
+            border-radius: 24px;
+        }
+
+        .image-container:hover .caption, .video-container:hover .caption {
+            opacity: 1;
+        }
+
+        .b2t-image img {
+            filter: invert(100%);
+        }
+
+        @media (max-width: 800px) {
+            #gallery {
+                column-count: 1;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="nav-wrap">
         <header>
             <h1 class="logo"><a href="index.html">Will Kha</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="3D.html">3D Design</a></li>
+                    <li><a href="productdesign.html">Product Design</a></li>
+                    <li><a href="Photography.html">Photography</a></li>
+                </ul>
+            </nav>
         </header>
     </div>
+      
+    <!-- NAV BAR MOBILE BUTTON -->
+    <input type="checkbox" class="dropdown-toggle" id="dropdown-menu">
+    <label for="dropdown-menu" class="dropdown-label">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div> 
+    </label>
+    <ul class="dropdown-menu">
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="3D.html">3D Design</a></li>
+        <li><a href="productdesign.html">Product Design</a></li>
+        <li><a href="Photography.html">Photography</a></li>
+    </ul>
 
     <div class="gallery-title">
         <h1>3D Design</h1>
