@@ -763,18 +763,6 @@ nav a:hover {
     flex-direction: column; /* Make the flex direction vertical */
 }
 
-.img-card, .emerald-container {
-    width: 100%;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    font-family: Play;
-    text-align: center; /* Center the text horizontally */
-}
-
-
-.vid {
-    width: 100%; /* Make the video take 100% width of its container */
-}
 
 
 /* responsive styles (DESKTOP) */
