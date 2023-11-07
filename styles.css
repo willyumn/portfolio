@@ -1308,6 +1308,19 @@ nav a:hover {
   .dropdown-toggle:checked + .dropdown-label .bar:nth-child(3) {
 	transform: translateY(-8px) rotate(45deg);
   }
+/* Set the default font size relative to the container's height */
+.dropdown-menu li a {
+	font-size: 4vh; /* Adjust the value as needed */
+	transition: font-size 0.3s; /* Add a smooth transition effect */
+	line-height: 100%; /* Match the line height to the container height */
+  }
+  
+  /* Adjust font size based on container's height using media query */
+  @media (max-height: 600px) {
+	.dropdown-menu li a {
+	  font-size: 2.5vh; /* Adjust the value for smaller container heights */
+	}
+  }
   
   /* Hide the dropdown menu on desktop */
   @media screen and (min-width: 800px) {
@@ -1321,6 +1334,13 @@ nav a:hover {
 	height: auto; /* This maintains the aspect ratio */
   }
   
+  .linkedin-logo-container {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	margin-top: 10px; /* Adjust the margin as needed */
+	
+  }
   .nav-gradient {
 	position: absolute;
 	width: 2000px;
