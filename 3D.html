@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Will Kha | 3D Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2fa03971cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "play", sans-serif;
+            background-color: black;
+        }
+
+        .nav-wrap {
+            background-color: rgb(0, 0, 0);
+            padding: 0px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .nav-wrap a {
+    color: var(--color4); /* Set the default text color */
+        }
+        header {
+            margin: 0;
+        }
+
+        #gallery-container {
+            padding: 20px;
+            margin-top: 70px; /* Create space below the fixed header */
+        }
+
+        #gallery {
+            column-count: 3;
+            column-gap: 20px;
+            text-align: center;
+            position: relative;
+            width: 100%; /* Set the width to 100% */
+        }
+
+        .image-container, .video-container {
+            position: relative;
+        }
+
+        img, video {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            transition: transform 0.25s ease;
+        }
+
+        .image-container:hover img, .video-container:hover video {
+            transform: scale(1.02); /* Adjust the scale factor as needed */
+            filter: brightness(0.1); /* Darken the image or video */
+            transition: ease .1s;
+        }
+
+        .caption {
+            position: absolute;
+            background: rgba(0, 0, 0, 0);
+            color: white;
+            padding: 24px;
+            text-align: left;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 31px;
+            border-radius: 24px;
+        }
+
+        .image-container:hover .caption, .video-container:hover .caption {
+            opacity: 1;
+        }
+
+        .b2t-image img {
+            filter: invert(100%);
+        }
+
+        @media (max-width: 800px) {
+            #gallery {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-wrap">
+        <header>
+            <h1 class="logo"><a href="index.html">Will Kha</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="3D.html">3D Design</a></li>
+                    <li><a href="productdesign.html">Product Design</a></li>
+                    <li><a href="Photography.html">Photography</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+      
+    <!-- NAV BAR MOBILE BUTTON -->
+    <input type="checkbox" class="dropdown-toggle" id="dropdown-menu">
+    <label for="dropdown-menu" class="dropdown-label">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div> 
+    </label>
+    <ul class="dropdown-menu">
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="3D.html">3D Design</a></li>
+        <li><a href="productdesign.html">Product Design</a></li>
+        <li><a href="Photography.html">Photography</a></li>
+    </ul>
+
+    <div class="gallery-title">
+        <h1>3D Design</h1>
+        <p>Selected 3D animations and still artwork produced by me. 
+    </div>
+
+    <div id="gallery-container">
+        <div id="gallery">
+            <!-- Add your videos and captions here -->
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/LucyM16.png" controls>
+                    <source src="img/videos/LucyM16.mp4" type="video/mp4">
+                </video>
+                <div class="caption">"Lucy" - Plastic Halo Asset
+                    <br> 
+                    <br> Roles: Character Design, 3D Modeling/Animation, Character Rigging</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/CrazyCatz.png" controls>
+                    <source src="img/videos/CrazyCatz.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Crazy Catz NFT</div>
+            </div>
+            <div class="image-container">
+                <img src="img/video thumbnails/Minion.png" alt="Minion Redesign">
+                <div class="caption">Minion Reimagined</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/Beast.png" controls>
+                    <source src="img/videos/Beast.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Beast - Plastic Halo Asset</div>
+            </div>
+            <div class="image-container">
+                <img src="img/3ddesign/Wired.jpg" alt="Wired" >
+                <div class="caption">Wired
+                    <br> 
+                    <br> Roles: Photography, 3D Modeling/Sculpting/Compositing</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/Emfilm.png" controls>
+                    <source src="img/videos/EMFILM.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Emerald Caz Productions</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/Lucy.png" controls>
+                    <source src="img/videos/Lucy.mp4" type="video/mp4">
+                </video>
+                <div class="caption">"Lucy" - Plastic Halo</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/luminacatwalk.png" controls>
+                    <source src="img/videos/LuminaCatwalk.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Lumina - Plastic Halo</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/punkin.png" controls>
+                    <source src="img/videos/punkin.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Spider Pumpkin Asset</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/ghost.png" controls>
+                    <source src="img/videos/Ghosts.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Dancing Ghost Assets
+                    <br> 
+                    <br> Roles: 3D Modeling, Character Rigging, Animation</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/cigs.png" controls>
+                    <source src="img/videos/cigs.mp4" type="video/mp4">
+                </video>
+                <div class="caption">7 Helleven</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/Baby_Lucy.png" controls>
+                    <source src="img/videos/Baby Lucy.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Baby Lucy Plush Promo - Plastic Halo</div>
+            </div>
+            <div class="video-container">
+                <video class="vid" poster="img/video thumbnails/ProcessReel.PNG" controls>
+                    <source src="img/videos/ProcessReel.mp4" type="video/mp4">
+                </video>
+                <div class="caption">Workflow Reel</div>
+            </div>
+            <div class="image-container">
+                <img src="img/3ddesign/darkroom.png" alt="3D Compositing" style="width: 100%; height: auto; display: block; margin: auto;">
+                <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
+                    <div class="caption">"Darkroom" 
+                        <br> 
+                        <br> Roles: Photography, 3D Modeling/Sculpting/Compositing</div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <!-- Add more video elements with the same class if needed -->
+    <script type="text/javascript" src="volumelimit.js"></script>
+    <script src="b2t.js"></script>
+    <script src="click.js"></script>
+    <button id="back-to-top" class="b2t-image">
+        <img src="img/BacktoTop.png" alt="Back to Top">
+
+    </button>
+
+    
+</body>
+
+
+</html>
