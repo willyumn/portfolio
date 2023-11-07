@@ -46,6 +46,10 @@
       transform: scale(1.02); /* Adjust the scale factor as needed */
       transition: LINEAR .1s;
     }  
+
+    .nav-gradient {
+	background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0), rgba(255, 0, 0, 0));
+}
     
 
 @media (max-width: 800px) {
@@ -57,34 +61,38 @@
   </style>
 </head>
 <body>
+  <!-- Navigation Desktop-->
   <div class="nav-wrap">
-    <header>
-        <h1 class="logo"><a href="index.html">Will Kha</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="3D.html">3D Design</a></li>
-                <li><a href="productdesign.html">Product Design</a></li>
-                <li><a href="Photography.html">Photography</a></li>
-            </ul>
-        </nav>
-    </header>
-</div>
+      <header>
+          <h1 class="logo"><a href="#intro">Will Kha</a></h1>
+          <nav>
+              <ul>
+                  <li><a href="index.html#about">About Me</a></li>
+                  <li><a href="3D.html">3D Design</a></li>
+                  <li><a href="productdesign.html">Product Design</a></li>
+                  <li><a href="Photography.html">Photography</a></li>
+              </ul>
+          </nav>
+          <div class="nav-gradient"></div>
+      </header>
+  </div>
 
 <!-- NAV BAR MOBILE BUTTOM -->
 <input type="checkbox" class="dropdown-toggle" id="dropdown-menu">
 <label for="dropdown-menu" class="dropdown-label">
 <div class="hamburger">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
 </div> 
 </label>
 <ul class="dropdown-menu">
-<li><a href="index.html#about">About Me</a></li>
-<li><a href="3D.html">3D Design</a></li>
-<li><a href="productdesign.html">Product Design</a></li>
-<li><a href="Photography.html">Photography</a></li>
+  <li><a href="#about">About Me</a></li>
+  <li><a href="3D.html">3D Design</a></li>
+  <li><a href="productdesign.html">Product Design</a></li>
+  <li><a href="Photography.html">Photography</a></li>
+  <li><a href="https://www.linkedin.com/in/willyumn/"><img class="linkedin-icon" src="img/linkedin.png" alt="LinkedIn Icon"></a>
+</div>
 </ul>
   
   <div id="gallery-container">

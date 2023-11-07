@@ -1321,3 +1321,13 @@ nav a:hover {
 	height: auto; /* This maintains the aspect ratio */
   }
   
+  .nav-gradient {
+	position: absolute;
+	width: 2000px;
+	left: -500px;
+	height: 40px; /* Adjust the height to your desired size */
+	top: 64px; /* Adjust the top position to be just below the navigation bar */
+	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 0, 0, 0));
+	z-index: -1; /* Place it below the navigation bar */
+	
+  }
