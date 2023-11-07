@@ -1,5 +1,5 @@
 :root {
-	--color1: #969696;
+	--color1: #424242;
 	--color2: #ff4a4a;
 	--color3: #e0e0e0; 
 	--color4: #272727;
@@ -24,6 +24,10 @@ html {
 	font-family: Play;
 }
 
+@font-face {
+	src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap);
+	font-family: 'Roboto', sans-serif;
+}
 
 .blinking {
 	animation: blinkingText 1.2s infinite;
