@@ -87,7 +87,7 @@
             border-radius: 24px;
             position: absolute;
             font-family: "Roboto";
-            z-index: -100;
+            z-index: 100;
 
         }
 
@@ -112,6 +112,9 @@
     }
     .image-container:hover .caption, .video-container:hover .caption {
         opacity: 0; /* Keep captions visible on mobile */
+    }
+    .caption{
+        z-index: -100;
     }
 }
         
@@ -208,12 +211,12 @@
                         <br> 
                         <br> Roles: 3D Modeling, Rigging, Animation</div>
             </div>
-            <div class="video-container">
-                <video class="vid" poster="img/video thumbnails/cigs.png" controls>
-                    <source src="img/videos/cigs.mp4" type="video/mp4">
-                </video>
+
+            <div class="image-container">
+                <img src="img/3ddesign/7hell.gif" alt="7 Helleven" >
                 <div class="caption">7 Helleven<br>Plastic Halo<br><br> Focus: Modeling, Animation</div>
             </div>
+
             <div class="video-container">
                 <video class="vid" poster="img/video thumbnails/Baby_Lucy.png" controls>
                     <source src="img/videos/Baby Lucy.mp4" type="video/mp4">
