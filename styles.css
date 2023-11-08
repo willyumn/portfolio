@@ -133,7 +133,7 @@ header {
 
 .resume a {
 	color: var(--color1);
-	text-decoration: none;
+    text-decoration: none !important;
 	font-family: big pixel demo;
 	font-size: 22px;
 	padding-right: 15px;
@@ -428,6 +428,7 @@ nav a:hover {
     transition: transform 0.3s ease-in-out;
     transform: scale(1);
     transform-origin: center;
+    text-decoration: none !important;
 }
 
 .resume-btn:hover {
@@ -1370,4 +1371,67 @@ nav a:hover {
 	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 0, 0, 0));
 	z-index: -1; /* Place it below the navigation bar */
 	
+  }
+
+  .resume-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh; /* Center vertically in the viewport */
+	
+  }
+  
+  .centered-content {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	justify-content: center;
+	
+  }
+  
+  .resume-btn {
+	justify-content: center;
+	margin: 0; /* Remove any default button margin */
+	cursor: pointer; /* Change cursor to pointer for better interaction */
+	padding-top: 5px; /* Adjust the value to move the text up or down as needed */
+	display: flex;
+	align-items: center; /* Center vertically */
+	justify-content: center; /* Center horizontally */
+	text-align: center;
+	
+	
+  }
+
+  /* Remove underline on anchor and button */
+.resume-btn, a {
+	text-decoration: none;
+  }
+  
+  .blinking {
+	animation: blink 1s infinite;
+	margin-top: -1px; /* Adjust this value to your desired positioning */
+
+  }
+  
+  @keyframes blink {
+	0% {
+	  opacity: 1;
+	}
+	50% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
+  .button-content {
+	display: flex; /* Display the icon and text containers side by side */
+	align-items: center; /* Center the icon and text vertically */
+  }
+  
+  .icon-container {
+	margin-right: 0px; /* Adjust the spacing between the icon and text */
+	display: flex; /* Display the icon and text containers side by side */
+	align-items: center; /* Center the icon and text vertically */
   }
