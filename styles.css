@@ -1135,6 +1135,16 @@ nav a:hover {
 	}
 
 	.icon-holder a {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+
+	.icon-holder span {
+		margin-top: 0px; /* Adjust this value to move the text up or down */
+	}
+
+	.icon-holder a {
 		font-family: Play;
 		color: var(--color4);
 		font-size: 20px;
