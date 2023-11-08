@@ -1082,6 +1082,7 @@ nav a:hover {
 		background-color: rgba(255, 255, 255, 0.8);
 		border: solid var(--color4) 3px;
 		border-radius: 24px;
+		
 
 	}
 
@@ -1130,6 +1131,7 @@ nav a:hover {
 		padding: 3px;
 		display: flex;
 		align-items: center;
+		
 	}
 
 	.icon-holder a {
@@ -1138,6 +1140,7 @@ nav a:hover {
 		font-size: 20px;
 		text-decoration: none;
 		cursor: pointer;
+		white-space: nowrap; /* Prevent text from wrapping */
 	}
 
 	.contact-set img {
