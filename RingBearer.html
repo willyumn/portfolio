@@ -1,34 +1,113 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Go Back Button</title>
+    <title>Will Kha | Ring Bearer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Montserrat:wght@100;300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2fa03971cf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+
     <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
+        .PlasticHalo {
+          max-width: 25%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          margin-top: -30px;
+          margin-bottom: 30px;
         }
-    </style>
+      </style>
 </head>
+
+
 <body>
-    <pre>
+    <body>
+        <!-- Navigation Desktop-->
+        <div class="nav-wrap">
+            <header>
+                <h1 class="logo"><a href="index.html">Will Kha</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html#about">About Me</a></li>
+                        <li><a href="3D.html">3D Design</a></li>
+                        <li><a href="productdesign.html">Product Design</a></li>
+                        <li><a href="Photography.html">Photography</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-gradient"></div>
+            </header>
+        </div>
+    
+    <!-- NAV BAR MOBILE BUTTOM -->
+    <input type="checkbox" class="dropdown-toggle" id="dropdown-menu">
+    <label for="dropdown-menu" class="dropdown-label">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div> 
+    </label>
+    <ul class="dropdown-menu">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="3D.html">3D Design</a></li>
+        <li><a href="productdesign.html">Product Design</a></li>
+        <li><a href="Photography.html">Photography</a></li>
+        <li><a href="https://www.linkedin.com/in/willyumn/"><img class="linkedin-icon" src="img/linkedin.png" alt="LinkedIn Icon"></a>
+    </div>
+      </ul>
+
+    <div id="main-wrap">
+        <div class="gallery-title">
+            <h1>Let's Design a Jewelry Holder!</h1>
+            <p id="process-subtitle">Plastic Halo "Ring Bearer"</p>
+        </div>
+        <div class="process-step">
+        </p><img src="img/ringbearer/PHLOGO.png" alt="PlasticHalo" class="PlasticHalo">
+            <h1>The Concept</h1>
+            <p>I aimed to design a product for Plastic Halo that showcases the brand's themes in a functional and playful manner, all while exuding a sense of elegance. </p>
+            <img src="img/ringbearer/drawing.png" alt="">
+        </div>
+        <div class="process-step">
+            <h1>3D Design</h1>
+            <p> Let's get to modeling!
+        </p><img src="img/ringbearer/basenotes.png" alt="">
+        </p><img src="img/ringbearer/hornsnotes.png" alt="">
+        </p><img src="img/ringbearer/sticksnotes.png" alt="">
+        </p><img src="img/ringbearer/halonotes.png" alt="">
+        </p><img src="img/ringbearer/deconstructednotes.png" alt="">
+        </div>
+        <div class="process-step">
+            <h1>3D Modeling</h1>
+            <p>I start 3D modeling in Blender using primitive shapes, referencing my drawings. I work to optimize the design for 3D printing, 
+                focusing on minimizing time consuming printing errors. </p>
 
 
-                                                                                     ____ 
-        *   )   )               )      (                             )              |   / 
-      ` )  /(( /(    )       ( /(      )\ )     (      )  (    (  ( /((        (  ( |  /  
-       ( )(_))\())( /(  (    )\())(   (()/(  (  )(    /(( )\ ( )\ )\())\  (    )\))(| /   
-      (_(_()|(_)\ )(_)) )\ )((_)\ )\   /(_)) )\(()\  (_))((_))((_|_))((_) )\ )((_))\|/    
-      |_   _| |(_|(_)_ _(_/(| |(_|(_) (_) _|((_)((_) _)((_|_|(_|_) |_ (_)_(_/( (()(_|      
-        | | | ' \/ _` | ' \)) / /(_-<  |  _/ _ \ '_| \ V /| (_-< |  _|| | ' \)) _` |)\     
-        |_| |_||_\__,_|_||_||_\_\/__/  |_| \___/_|    \_/ |_/__/_|\__||_|_||_|\__, ((_)    
-                                                                              |___/        
-      
-      </pre>
-    <p>Coming Soon</p>
-    <a href="javascript:history.back();">Go Back</a>
+
+
+
+
+    
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <p>Made with <i class="fas fa-heart"></i> <a target="_blank" href="#"> </a></p>
+        </div>
+    </div>
+    
+    <script src="b2t.js"></script>
+    
+    <button id="back-to-top" class="b2t-image">
+        <img src="img/BacktoTop.png" alt="Back to Top">
+    </button>
+    
+
 </body>
+
 </html>
