@@ -1160,7 +1160,7 @@ nav a:hover {
 
 .b2t-image:hover img {
     opacity: 1; /* Max opacity when hovering */
-	transform: scale(0.8); /* Shrink the button to 80% of its size on hover */
+	transform: scale(1.2); /* Grow the button to 120% of its size on hover */
 	   transition: transform 0.5s ease; /* Add a smooth transition */
 	   animation: scaleButton 2s infinite; /* Apply the animation on hover */
 	   cursor: pointer; /* Change to the desired cursor style, e.g., "pointer" for a hand icon */
