@@ -23,7 +23,6 @@ body {
     z-index: 1000;
 }
 
-/* Apply a smooth color transition effect */
 .nav-wrap a {
     color: var(--color1);
     transition: color 1s;
@@ -65,6 +64,9 @@ img, video {
 
 .caption {
     position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     background: rgba(0, 0, 0, 0);
     color: rgb(255, 255, 255);
     padding: 24px;
@@ -72,11 +74,7 @@ img, video {
     display: flex;
     justify-content: left;
     align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
     opacity: 0;
-    transition: opacity 0.3s;
     font-size: 30px;
     border-radius: 24px;
     font-family: "Roboto";
@@ -114,30 +112,31 @@ img, video {
     </style>
 </head>
 <body>
-  <!-- Navigation Desktop-->
-  <div class="nav-wrap">
-    <header>
-        <h1 class="logo"><a href="index.html">Will Kha</a></h1>
-        <nav>
-            <ul>
-                <li><a href="index.html#about">About Me</a></li>
-                <li><a href="3D.html">3D Design</a></li>
-                <li><a href="productdesign.html">Product Design</a></li>
-                <li><a href="Photography.html">Photography</a></li>
-            </ul>
-        </nav>
-        <div class="nav-gradient"></div>
-    </header>
-</div>
+    
+<!-- Navigation Desktop -->
+    <div class="nav-wrap">
+        <header>
+            <h1 class="logo"><a href="index.html">Will Kha</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#about">About Me</a></li>
+                    <li><a href="3D.html">3D Design</a></li>
+                    <li><a href="productdesign.html">Product Design</a></li>
+                    <li><a href="Photography.html">Photography</a></li>
+                </ul>
+            </nav>
+            <div class="nav-gradient"></div>
+        </header>
+    </div>
 
-<!-- NAV BAR MOBILE BUTTOM -->
-<input type="checkbox" class="dropdown-toggle" id="dropdown-menu">
-<label for="dropdown-menu" class="dropdown-label">
-<div class="hamburger">
-<span class="bar"></span>
-<span class="bar"></span>
-<span class="bar"></span>
-</div> 
+<!-- Navigation Mobile -->
+    <input type="checkbox" class="dropdown-toggle" id="dropdown-menu">
+    <label for="dropdown-menu" class="dropdown-label">
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </label>
     <ul class="dropdown-menu">
         <li><a href="index.html#about">About Me</a></li>
@@ -146,114 +145,99 @@ img, video {
         <li><a href="Photography.html">Photography</a></li>
         <div class="linkedin-logo-container">
             <a href="https://www.linkedin.com/in/willyumn/">
-              <img class="linkedin-icon" src="img/linkedin.svg" alt="LinkedIn Icon">
+                <img class="linkedin-icon" src="img/linkedin.svg" alt="LinkedIn Icon">
             </a>
-          </div>
+        </div>
     </ul>
-
     <div id="gallery-container">
         <div id="gallery">
-            <!-- Add your videos and captions here -->
-            <div class="image-container">
-                <img src="img/videos/Lucy0101.gif" alt="Lucy with M16" style="width: 100%; height: auto; display: block; margin: auto;">
-                   <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
+
+<div class="image-container">
+        <img src="img/videos/Lucy0101.gif" alt="Lucy with M16">
                     <div class="caption">"Lucy" Animation 1
                         <br> Plastic Halo <br>
                         <br> Focus: Character Design, 3D Modeling/Animation, Character Rigging</div>
-            </div>
-            <div class="video-container">
-                <video class="vid" poster="img/video thumbnails/CrazyCatz.png" controls>
+        </div>
+        <div class="video-container">
+        <video class="vid" poster="img/video thumbnails/CrazyCatz.png" controls>
                     <source src="img/videos/CrazyCatz.mp4" type="video/mp4">
                 </video>
                 <div class="caption"> Animated Promo <br>
                     Crazy Catz NFT <br> <br> Roles: Modeling, Sculpting, Rigging, Animation, Sound Design</div>
-            </div>
-            <div class="image-container">
+        </div>
+        <div class="image-container">
                 <img src="img/video thumbnails/Minion.png" alt="Minion Redesign">
                 <div class="caption">Minion Reimagined<br><br> Focus: Modeling, Sculpting</div>
-            </div>
-
-
-            <div class="image-container">
-                <img src="img/3ddesign/beast.gif" alt="Lucy with M16" style="width: 100%; height: auto; display: block; margin: auto;">
+        </div>
+        <div class="image-container">
+        <img src="img/3ddesign/beast.gif" alt="Lucy with M16" style="width: 100%; height: auto; display: block; margin: auto;">
                     <div class="caption">"Beast Mode Baphiam"
                         <br> Plastic Halo <br>
                         <br> Focus: Modeling, Rigging, Animation, Motion Design</div>
-            </div>
-            
-            <div class="image-container">
-                <img src="img/3ddesign/Wired.jpg" alt="Wired" >
+        </div>
+        <div class="image-container">
+        <img src="img/3ddesign/Wired.jpg" alt="Wired" >
                 <div class="caption">"Wired"
                     <br> 
                     <br> Focus: Photography, Sculpting/Compositing</div>
-            </div>
-            <div class="video-container">
-                <video class="vid" poster="img/video thumbnails/Emfilm.png" controls>
+        </div>
+        <div class="video-container">
+        <video class="vid" poster="img/video thumbnails/Emfilm.png" controls>
                     <source src="img/videos/EMFILM.mp4" type="video/mp4">
                 </video>
                 <div class="caption">Vanity Logo<br>
                     Emerald Caz Productions </div>
-            </div>
-            <div class="video-container">
-                <video class="vid" poster="img/3ddesign/luminacatwalk.png" controls>
+        </div>
+        <div class="video-container">
+        <video class="vid" poster="img/3ddesign/luminacatwalk.png" controls>
                     <source src="img/videos/LuminaCatwalk.mp4" type="video/mp4">
                 </video>
                 <div class="caption">"Lumina"<br>Plastic Halo<br><br>Focus: Character Design, 3D Modeling/Animation, Character Rigging </div>
-            </div>
-            <div class="image-container">
-                <img src="img/videos/Ghosts.gif" alt="Dancing Ghosts" style="width: 100%; height: auto; display: block; margin: auto;">
-                   <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
+        </div>
+        <div class="image-container">
+        <img src="img/videos/Ghosts.gif" alt="Dancing Ghosts">
                     <div class="caption">Dancing Ghost Assets
                         <br> 
                         <br> Roles: 3D Modeling, Rigging, Animation</div>
-            </div>
-
-            <div class="image-container">
-                <img src="img/3ddesign/7hell.gif" alt="7 Helleven" >
+        </div>
+        <div class="image-container">
+        <img src="img/3ddesign/7hell.gif" alt="7 Helleven" >
                 <div class="caption">7 Helleven<br>Plastic Halo<br><br> Focus: Modeling, Animation</div>
-            </div>
-
-            <div class="video-container">
-                <video class="vid" poster="img/video thumbnails/Baby_Lucy.png" controls>
+        </div>
+        <div class="video-container">
+        <video class="vid" poster="img/video thumbnails/Baby_Lucy.png" controls>
                     <source src="img/videos/Baby Lucy.mp4" type="video/mp4">
                 </video>
                 <div class="caption">Baby Lucy Plush Promo <br> Plastic Halo<br><br>Focus: Character Design, Motion Design</div>
-            </div>
-            <div class="video-container">
-                <video class="vid" poster="img/video thumbnails/ProcessReel.PNG" controls>
+        </div>
+        <div class="video-container">
+        <video class="vid" poster="img/video thumbnails/ProcessReel.PNG" controls>
                     <source src="img/videos/ProcessReel.mp4" type="video/mp4">
                 </video>
                 <div class="caption">"Lucy" Design<br> Plastic Halo <br><br>Process Reel</div>
-            </div>
-            <div class="image-container">
-                <img src="img/videos/Lucy43.gif" alt="Lucy with Glock" style="width: 100%; height: auto; display: block; margin: auto;">
-                   <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
+        </div>
+        <div class="image-container">
+        <img src="img/videos/Lucy43.gif" alt="Lucy with Glock">
                     <div class="caption">"Lucy" Animation 2
                         <br> Plastic Halo <br>
                         <br> Focus: Character Design, 3D Modeling/Animation, Character Rigging</div>
-            </div>
-            <div class="image-container">
-                <img src="img/3ddesign/darkroom.png" alt="3D Compositing" style="width: 100%; height: auto; display: block; margin: auto;">
-                <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
+        </div>
+        <div class="image-container">
+        <img src="img/3ddesign/darkroom.png" alt="3D Compositing">
                     <div class="caption">"Darkroom" 
                         <br> 
                         <br> Focus: Photography, Sculpting/Compositing</div>
-
-            </div>
-            <div class="image-container">
-                <img src="img/3ddesign/lucyloiter.png" alt="Lucy Loitering" style="width: 100%; height: auto; display: block; margin: auto;">
-                <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
+        </div>
+        <div class="image-container">
+        <img src="img/3ddesign/lucyloiter.png" alt="Lucy Loitering">
                     <div class="caption">"Lucy" 
                         <br> 
                         <br> Focus: Photography, Compositing</div>
-            </div>
-            <div class="image-container">
-                <img src="img/videos/baphyrise.gif" alt="Baphiam Rising" style="width: 100%; height: auto; display: block; margin: auto;">
-                   <h2 style="color: var(--color3); text-align: center; margin-top: 30px;">
-                        <div class="caption">"Baphiam" Promo
-                                     <br> Plastic Halo <br> <br> Focus: Design a PVC Toy
-                                     </div>
-        
+        </div>
+        <div class="image-container">
+        <img src="img/videos/baphyrise.gif" alt="Baphiam Rising">
+                    <div class="caption">"Baphiam" Promo
+                        <br> Plastic Halo <br> <br> Focus: Design a PVC Toy</div>
         </div>
         <div class="video-container">
             <video class="vid" poster="img/video thumbnails/punkin.png" controls>
@@ -262,23 +246,9 @@ img, video {
             <div class="caption">Spider Pumpkin Asset<br><br> Focus: Modeling, Rigging, Animation</div>
         </div>
     </div>
-
-
-
-
-
-    
-    <!-- Add more video elements with the same class if needed -->
-    <script type="text/javascript" src="volumelimit.js"></script>
-    <script src="b2t.js"></script>
-    <script src="click.js"></script>
-    <button id="back-to-top" class="b2t-image">
-        <img src="img/BacktoTop.png" alt="Back to Top">
-
-    </button>
-
-    
+<script type="text/javascript" src="volumelimit.js"></script>
+<script src="b2t.js"></script>
+<script src="click.js"></script>
+<button id="back-to-top" class="b2t-image"><img src="img/BacktoTop.png" alt="Back to Top"></button>
 </body>
-
-
 </html>
