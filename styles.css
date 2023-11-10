@@ -1024,7 +1024,7 @@ nav a:hover {
 	.skills-columns {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr; /* Two equal-width columns */
-			grid-gap: 60px; /* Space between columns. #software */
+			grid-gap: 10px; /* Space between columns. #software */
 		  }
 		
 		  .skills-column {
