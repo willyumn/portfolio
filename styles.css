@@ -320,7 +320,7 @@ nav a:hover {
 }
 
 .type-text {
-	width: max-content;
+	width: 85%;
 }
 
 .type-text::before,
@@ -362,7 +362,7 @@ nav a:hover {
 .intro h3 {
 	font-family: var(--body-text);
 	font-weight: 100;
-	font-size: 22px;
+	font-size: 18px;
 	line-height: 24px;
 	text-align: center;
 }
