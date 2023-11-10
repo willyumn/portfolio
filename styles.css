@@ -4,8 +4,6 @@
 	--color3: #e0e0e0; 
 	--color4: #272727;
 	--bgcolor: #ffffff;
-	
-
 	--body-text: 'Play', monospace;
 	--title-text: 'Play', sans-serif;
 }
@@ -869,6 +867,7 @@ nav a:hover {
 		margin-top: 0px;
 		max-width: 600px;
 	}
+	
 	/* projects section */
 
 	.projects {
@@ -925,7 +924,7 @@ nav a:hover {
 		width: 40%;
 		max-width: 300px;
 	}
-
+}
 	.img-gallery {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr); /* Two columns */
@@ -948,7 +947,7 @@ nav a:hover {
     }
 
 	
-}
+
 
 	/* contact section */
 
@@ -1018,13 +1017,13 @@ nav a:hover {
 		align-items: center;
 		font-family: "Play";
 		font-size: 12px;
-		letter-spacing: -.5px;
+		letter-spacing: -.2px;
 		
 	}
 	.skills-columns {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr; /* Two equal-width columns */
-			grid-gap: 10px; /* Space between columns. #software */
+			grid-gap: 15px; /* Space between columns. #software */
 		  }
 		
 		  .skills-column {
@@ -1038,7 +1037,21 @@ nav a:hover {
 	
 
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
+
+	.skills-container {
+		max-width: 650px;
+		padding: 6px;
+		margin: 0 auto;
+		font-size: 16px;
+		letter-spacing: 1px;
+		
+	}
+	.skills-columns {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr; /* Two equal-width columns */
+		grid-gap: 60px; /* Space between columns. #software */
+	  }
 
 	/* intro section */
 	#intro {
@@ -1425,3 +1438,4 @@ nav a:hover {
 	display: flex; /* Display the icon and text containers side by side */
 	align-items: center; /* Center the icon and text vertically */
   }
+  
