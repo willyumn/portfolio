@@ -1367,8 +1367,8 @@ nav a:hover {
   }
   .nav-gradient {
 	position: absolute;
-	width: 2000px;
-	left: -500px;
+	width: 5000px;
+	left: -1500px;
 	height: 40px; /* Adjust the height to your desired size */
 	top: 64px; /* Adjust the top position to be just below the navigation bar */
 	background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 255, 255), rgba(255, 0, 0, 0));
