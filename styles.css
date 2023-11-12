@@ -415,21 +415,16 @@ nav a:hover {
     font-family: var(--body-text);
     background-color: rgba(18, 18, 18, 0);
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 24px;
     color: var(--color2);
     margin-top: 10px;
     cursor: pointer;
     transition: all 150ms ease-in-out;
     width: 150px;
     padding: 10px;
-    border: solid var(--color1) 2px;
+    border: solid var(--color1) 3px;
     transform-origin: center;
     text-decoration: none !important;
-}
-
-.resume-btn:hover {
-
-    animation: pulse 1s infinite; /* Apply the pulse animation on hover */
 }
 
 
