@@ -765,10 +765,6 @@ nav a:hover {
 		font-size: 19px;
 	}
 
-	nav li:hover {
-		transform: scale(.99);
-	}
-
 	.nav-toggle-label {
 		display: none;
 	}
